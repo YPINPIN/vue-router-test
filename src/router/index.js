@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from 'vue-router';
+import { createRouter, createWebHistory } from 'vue-router';
 // 靜態導入
 import Home from '@/views/Home.vue';
 
@@ -20,7 +20,7 @@ const routes = [
 // 創建路由實例
 const router = createRouter({
   // 指定模式
-  history: createWebHashHistory(import.meta.env.BASE_URL + '#/app/'),
+  history: createWebHistory(import.meta.env.BASE_URL),
   // 設定前面配置的路由
   routes,
 });
