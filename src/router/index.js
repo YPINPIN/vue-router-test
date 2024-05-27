@@ -20,7 +20,7 @@ const routes = [
 // 創建路由實例
 const router = createRouter({
   // 指定模式
-  history: createWebHashHistory(),
+  history: createWebHashHistory(import.meta.env.BASE_URL + '#/app/'),
   // 設定前面配置的路由
   routes,
 });
