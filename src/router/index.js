@@ -15,6 +15,12 @@ const routes = [
     // 動態導入(懶加載)
     component: () => import('@/views/About.vue'),
   },
+  // 設置 404 NotFound 頁面
+  {
+    path: '/:pathMatch(.*)',
+    name: 'NotFound',
+    component: () => import('@/views/NotFound.vue'),
+  },
 ];
 
 // 創建路由實例
